@@ -17,7 +17,6 @@ const useLocalStorage = () => {
     setData((prev) => {
       return [...prev, newData];
     });
-    console.log(JSON.parse(localStorage.getItem("user")));
   };
 
   return [data, sendToLocalStorage];

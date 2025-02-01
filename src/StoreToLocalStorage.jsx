@@ -28,11 +28,13 @@ const StoreToLocalStorage = () => {
 
       <div>
         <h1>Users names</h1>
-        {data.map((element, index) => (
-          <p key={index}>
-            Name : {element.name} & Surname: {element.surname}
-          </p>
-        ))}
+        <ol>
+          {data.map((element, index) => (
+            <li key={index}>
+              Name : {element.name} & Surname: {element.surname}
+            </li>
+          ))}
+        </ol>
       </div>
     </>
   );
