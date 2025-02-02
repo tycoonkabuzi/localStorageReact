@@ -7,7 +7,7 @@ const StoreToLocalStorage = () => {
   const getValueInput = (e) => {
     const name = e.target.name;
     setNewData((prev) => {
-      return { ...prev, [name]: e.target.value };
+      return { [name]: e.target.value };
     });
   };
   return (
